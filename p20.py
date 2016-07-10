@@ -1,4 +1,5 @@
 # calculate sum of digits in 100!
+# solution is trivial in python
 
 def fact(n):
 	total = 1
