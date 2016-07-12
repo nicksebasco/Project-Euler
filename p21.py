@@ -30,3 +30,13 @@ def main():
     return 0
 
 main()
+
+"""
+# alternatively
+factors = lambda n: reduce(list.__add__,([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0))
+def isAmicablePair(n):
+    f1 = sum(factors(n))-n
+    f2 = sum(factors(f1))-f1
+    return [n,f1] if n == f2 and f1 != f2 else [0,0]
+print "sum: ", sum(filter(lambda x: x != 0,[isAmicablePair(n)[0] for n in range(1,10001)]))
+"""
