@@ -21,10 +21,8 @@ def main():
         if n not in cache:
             pair = isAmicablePair(n)
             if pair:
-                x= pair[0]
-                y= pair[1]
-                cache[x] = x
-                cache[y] = y
+                x,y = pair[0],pair[1]
+                cache[x],cache[y] = x,y
 
     print "sum: ", sum(cache.values())
     print "pairs: ", cache.values()
