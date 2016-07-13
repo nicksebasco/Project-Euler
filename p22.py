@@ -19,7 +19,6 @@ def lex(word):
             score.append(value)
         else:
             score.append("00")
-
         i = i + 1
     return int(reduce(lambda a,b: a+b,score))
 
