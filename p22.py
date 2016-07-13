@@ -79,5 +79,5 @@ from re import sub
 score = lambda word: sum(ascii_uppercase.index(c) + 1 for c in word)
 with open('names.txt') as f:
   names = sorted([sub('["\n]','', name) for name in f.read().split(',')])
-print sum(i*score(x) for i, x in enumerate(names, 1))
+  print sum(i*score(x) for i, x in enumerate(names, 1))
 """
