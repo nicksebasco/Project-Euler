@@ -33,12 +33,3 @@ def abundant_numbers(int min, int max):
     if sum > i:
       abundant.push_back(i)
   return abundant
-
-"""
-# iterate through abundant vector, if length > 1, add i to each j in abundant if j != i and append to abundant sums vector
-# cdef map[int, int] abundant_sums
-for j in abundant:
-  if i != j:
-    asum = i + j
-    abundant_sums[asum] = asum
-"""
